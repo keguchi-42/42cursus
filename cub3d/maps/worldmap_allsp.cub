@@ -1,0 +1,21 @@
+R 640 480
+NO ./textures/lodev/colorstone.xpm
+SO ./textures/lodev/eagle.xpm
+WE ./textures/lodev/greystone.xpm
+EA ./textures/lodev/mossy.xpm
+S ./textures/barrel.xpm
+F 220,100,0
+C 12,214,250
+
+
+1111111111
+1222222221
+1222222221
+1222222221
+1222222221
+1222N22221
+1222222221
+1222222221
+1222222221
+1222222221
+1111111111

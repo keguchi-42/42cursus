@@ -1,0 +1,37 @@
+
+
+
+
+
+     R     500     300    
+
+          S        ./textures/barrel.xpm                                  
+
+
+   F     220,100,0                     
+
+
+   C     12,214,250             
+
+          SO        ./textures/lodev/colorstone.xpm             
+
+          NO        ./textures/lodev/eagle.xpm                        
+
+          WE        ./textures/lodev/greystone.xpm                        
+
+          EA        ./textures/lodev/mossy.xpm                                  
+
+
+
+
+
+
+0000000
+0111100
+0120210
+010S010
+0111100
+0000000
+
+
+

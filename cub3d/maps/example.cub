@@ -1,0 +1,21 @@
+R 640 480
+NO ./textures/kanji/north.xpm
+SO ./textures/kanji/south.xpm
+WE ./textures/kanji/west.xpm
+EA ./textures/kanji/east.xpm
+S ./textures/barrel.xpm
+F 220,100,0
+C 12,214,250
+
+
+1111111111
+1000000001
+1020000201
+1000010001
+1000000001
+1000N00001
+1000000001
+1000000001
+1000200001
+1000000001
+1111111111
