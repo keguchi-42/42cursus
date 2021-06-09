@@ -6,7 +6,7 @@
 #    By: keguchi <keguchi@student.42tokyo.jp>       +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/07/05 17:32:59 by keguchi           #+#    #+#              #
-#    Updated: 2021/06/04 08:29:47 by keguchi          ###   ########.fr        #
+#    Updated: 2021/06/10 01:27:46 by keguchi          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -51,37 +51,31 @@ SRCS		=	ft_atoi.c					\
 				ft_putendl_fd.c				\
 				ft_putnbr_fd.c				\
 				ft_strncpy.c				\
-
-BONUS		=	ft_lstnew.c					\
+				ft_lstnew.c					\
 				ft_lstadd_front.c			\
 				ft_lstsize.c				\
 				ft_lstlast.c				\
 				ft_lstadd_back.c			\
 				ft_lstdelone.c				\
 				ft_lstclear.c				\
-				ft_lstiter.c				\
+				ft_lstiter.c
 
 OBJS		=	$(SRCS:.c=.o)
-
-OBJS_B		=	$(BONUS:.c=.o)
 
 all			:	$(NAME)
 
 $(NAME)		:	$(OBJS)
-			@ar -rcs $(NAME) $(OBJS)
+			ar -rcs $(NAME) $(OBJS)
 
 .c.o		:
-			@${CC} ${CFLAGS} -c $< -o $(<:.c=.o)
+			${CC} ${CFLAGS} -c $< -o $(<:.c=.o)
 
 clean		:
-			@/bin/rm -f $(OBJS) $(OBJS_B)
+			/bin/rm -f $(OBJS)
 
 fclean		:	clean
-			@/bin/rm -f $(NAME)
+			/bin/rm -f $(NAME)
 
 re			:	fclean all
 
-bonus		:	$(OBJS) $(OBJS_B)
-			@ar -rcs $(NAME) $(OBJS) $(OBJS_B)
-
-.PHONY		:	all clean fclean re bonus
+.PHONY		:	all clean fclean re
